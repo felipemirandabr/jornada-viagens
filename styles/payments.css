@@ -1,10 +1,6 @@
 @charset "UTF-8";
 
-.content-text {
-        margin-top: 24px;
-    }
-
-.container-image {
+.payments__image-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 24px;
@@ -12,39 +8,64 @@
     margin-top: 24px;
 }
 
-.first {
+.payments__image--first {
     background: url(../assets/gallery1-mobile.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.second {
+.payments__image--second {
     background: url(../assets/gallery2-mobile.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.third{
+.payments__image--third{
     background: url(../assets/gallery3-mobile.png) no-repeat;
     background-size: cover;
     background-position: bottom;
     grid-column: span 2;
 }
 
+.payments__image--first-package {
+    background: url(../assets/travel-packages/gallery1-mobile.png) no-repeat;
+    background-size: cover;
+    background-position: center left;
+}
+
+.payments__image--second-package {
+    background: url(../assets/travel-packages/gallery2-mobile.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.payments__image--third-package{
+    background: url(../assets/travel-packages/gallery3-mobile.png) no-repeat;
+    background-size: cover;
+    background-position: 40% 0%;
+    grid-column: span 2;
+}
+
+.payments__price {
+    font-size: 40px;
+    font-weight: var(--title-weight);
+    padding-bottom: 24px;
+}
+
 @media screen and (min-width: 768px) {
-    .first {
+    .payments__image--first {
     background: url(../assets/gallery1-tablet.png) no-repeat;
     background-size: cover;
     background-position: center;
     }
 
-    .second {
+    .payments__image--second {
     background: url(../assets/gallery2-tablet.png) no-repeat;
     background-size: cover;
     background-position: center;
     }
 
-    .third{
+    .payments__image--third{
     background: url(../assets/gallery3-tablet.png) no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -53,16 +74,16 @@
 
 @media screen and (min-width: 1440px) {
     
-    .content-container {
+    .payments__container {
         display: flex;
         justify-content: space-between;
     }
 
-    .container-text {
+    .payments__text {
         width: 360px;
     }
     
-    .container-image {
+    .payments__image-container {
         width: 790px;
         margin-top: 0;
     }

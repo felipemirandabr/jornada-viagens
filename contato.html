@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Jornada Viagens</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="Contato | Jornada Viagens: Temos uma equipe de plantão para ajudar você!">
+    <meta name="og:title" content="Contato | Jornada Viagens">
+    <meta name="og:description" content="Contato | Jornada Viagens: Temos uma equipe de plantão para ajudar você!">
+    <meta name="og:image" content="https://felipemirandabr.github.io/jornada-viagens/assets/logo-footer.png">
+    <meta name="og:type" content="website">
+    <meta name="og:url" content="https://felipemirandabr.github.io/jornada-viagens/contato">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="site-header__logo-container" href="index.html" title="Voltar para a página inicial">
+            <img class="site-header__logo--mobile" src="assets/bussola-jornada-branco.png" alt="Bússola do logo Jornada Viagens na cor branca">
+            <img class="site-header__logo--desktop" src="assets/bussola-texto-jornada-branco.png" alt="Logo Jornada Viagens na cor branca">
+        </a>
+        <div class="site-header__menu-container">
+            <label for="menu">
+                <img src="assets/menu.png" alt="Menu">
+            </label>
+            <input type="checkbox" id="menu" hidden>
+            <nav class="site-header__menu">
+                <ul>
+                    <li class="site-header__menu-item"><a href="blog.html" title="Acessar Blog">Blog</a></li>
+                    <li class="site-header__menu-item"><a href="pacotes-de-viagem.html" title="Acessar Pacotes de viagem">Pacotes de viagem</a></li>
+                    <li class="site-header__menu-item site-header__menu-item--active"><a href="contato.html" title="Acessar Contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero__image hero__image-header hero__image-header--contact">
+            <div class="hero__content">
+                <h2 class="hero__title">Entre em contato!</h2>
+                <hr class="hero__line section-title__line">
+                <h2 class="hero__subtitle content-text">Dúvidas, sugestões, problemas para resolver? Temos uma equipe de plantão para ajudar você!</h2>
+            </div>
+        </div>
+        
+    </section>
+    <main>
+        <section class="form">
+            <div class="section-title">
+                <h3 class="section-title__title">Preencha o formulário:</h3>
+                <hr class="section-title__line">
+            </div>
+            <p class="form__text">Temos uma equipe sempre em prontidão para resolver suas dúvidas, problemas, trazer dicas e orientações objetivas para tornar sua experiência o mais prazerosa e tranquila possível. Preencha seus dados que vamos retornar seu contato conforme a urgência do seu chamado. Pode confiar!</p>
+            <form class="form__container" action="">
+                <input class="form__item" type="text" id="f-name" name="f-name" placeholder="Seu nome" required>
+                <div class="form__items">
+                    <input class="form__item" type="tel" id="f-tel" name="f-tel" placeholder="Telefone" required>
+                    <input class="form__item" type="email" id="f-email" name="f-email" placeholder="Email" required>
+                </div>
+                <div class="form__item-container">
+                    <label class="form__item" for="f-subject">Assunto</label>
+                    <textarea class="form__item--textarea" name="f-subject" id="f-subject"></textarea>
+                </div>
+                <button class="submit-button" type="submit">Enviar!</button>
+            </form>
+        </section>
+    </main>
+    <section class="hero">
+        <div class="hero__image hero__image-footer hero__image-footer--contact"></div>
+    </section>
+    <footer class="site-footer">
+        <div class="site-footer__info">
+            <img class="site-footer__logo" src="assets/logo-footer.png" alt="Bússola do logo Jornada Viagens na cor branca com texto">
+            <p class="site-footer__text">Horário de atendimento: 08h - 20h (Segunda a Sábado)</p>
+            <p class="site-footer__text">Desenvolvido por Alura. Projeto fictício sem fins comerciais.</p>
+        </div>
+        <div class="site-footer__social-media">
+            <p class="site-footer__social-media-text">Acesse nossas redes:</p>
+            <a href="#" target="_blank" title="Entre em contato via Whatsapp"><img src="assets/icone-whatsapp.svg" alt="Logomarca do Whatsapp" class="site-footer_social-media-logo"></a>
+            <a href="#" target="_blank" title="Acesse o Instagram do Jornada Viagens"><img src="assets/icone-instagram.svg" alt="Logomarca do Instagram" class="site-footer_social-media-logo"></a>
+            <a href="#" target="_blank" title="Aceesse o Twitter do Jornada Viagens"><img src="assets/icone-twitter.svg" alt="Logomarca do Twitter" class="site-footer_social-media-logo"></a>
+        </div>
+    </footer>
+</body>
+</html>

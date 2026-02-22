@@ -51,6 +51,12 @@ section {
 .content-text {
     font-size: 20px;
     line-height: 32px;
+    padding-top: 24px;
+}
+
+.content-text--margin {
+    margin-bottom: 24px;
+
 }
 
 .section-title{
@@ -58,13 +64,13 @@ section {
     margin: auto;
 }
 
-.section-title h2 {
+.section-title__title {
     font-size: 32px;
     font-weight: var(--title-weight);
     text-align: center;
 }
 
-.section-title hr {
+.section-title__line {
     width: 180px;
     height: 4px;
     background-color: var(--primary-color);
@@ -72,7 +78,7 @@ section {
     margin: 16px auto 32px auto;
 }
 
-.button {
+.details-button, .submit-button {
     display: inline-block;
     width: 100%;
     height: 64px;
@@ -84,6 +90,16 @@ section {
     text-decoration: none;
     line-height: 64px;
     text-align: center;
+    border: none;
+}
+
+.details-button--margin {
+    margin-top: 24px;
+}
+
+.star {
+    color: var(--primary-color);
+    font-size: 39px;
 }
 
 @media screen and (min-width:768px) {
@@ -91,7 +107,7 @@ section {
         padding: 0 60px;
     }
 
-    .button {
+    .details-button, .submit-button {
         width: 280px;
     }
 
@@ -99,7 +115,7 @@ section {
         width: 100%;
     }
 
-    .section-title h2 {
+    .section-title__title {
         font-size: 32px;
     }
 }
@@ -109,12 +125,13 @@ section {
         padding: 0 120px;
     }
 
-    .section-title hr {
+    .section-title__line {
         margin: 16px auto 64px auto;
     }
 
-    .button:hover {
+    .details-button:hover, .submit-button:hover {
     background-color: var(--secondary-color);
+    cursor: pointer;
     }
 }
 

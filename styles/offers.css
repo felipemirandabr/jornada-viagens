@@ -1,13 +1,13 @@
 @charset "UTF-8";
 
-.offers-cards {
+.offers__card-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 24px;
 }
 
-.card {
+.offers__card {
     padding: 24px 16px;
     color: var(--text-secondary-color);
     width: 312px;
@@ -16,54 +16,54 @@
     text-align: center;
 }
 
-.card header {
+.offers__card-header {
     display: block;
     background-color: transparent;
     padding: 0;
     position: static;
 }
 
-.card header p {
+.offers__card-type {
     font-size: 20px;
     margin-bottom: 8px;
     line-height: 32px;
 }
 
-.card header h3 {
+.offers__card-destination {
     font-size: 40px;
     font-weight: var(--title-weight);
     line-height: 49px;
 }
 
-.card header h4 {
+.offers__card-price {
     font-size: 32px;
     font-weight: var(--title-weight);
     margin: 24px 0;
     line-height: 39px;
 }
 
-.card.japao {
+.offers__card--japao {
     background: url(../assets/bg-card-japao.jpg) no-repeat;
     background-size: cover;
 }
 
-.card.san-andreas {
+.offers__card--san-andreas {
     background: url(../assets/bg-card-san-andreas.jpg) no-repeat;
     background-size: cover;
 }
 
-.card.paraiba {
+.offers__card--paraiba {
     background: url(../assets/bg-card-paraiba.jpg) no-repeat;
     background-size: cover;
 }
 
-.card.manaus {
+.offers__card--manaus {
     background: url(../assets/bg-card-manaus.jpg) no-repeat;
     background-size: cover;
 }
 
 @media screen and (min-width: 700px) {
-    .offers-cards {
+    .offers__card-container {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
@@ -75,22 +75,22 @@
 
 @media screen and (min-width: 1440px) {
 
-    .offers-cards {
+    .offers__card-container {
         width: 100%;
     }
 
-    .card {
+    .offers__card {
         padding: 24px 32px;
         width: 588px;
         height: 308px;
     }
 
-    .card header h3 {
+    .offers__card-destination {
         font-size: 48px;
         line-height: 59px;
     }
 
-    .card header h4 {
+    .offers__card-price {
         font-size: 40px;
         line-height: 49px;
     }

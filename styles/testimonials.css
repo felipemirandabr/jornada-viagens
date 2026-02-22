@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+.testimonials__container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.testimonials__article-text {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.testimonials__article-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    padding-top: 8px;
+}
+
+.testimonials__article-profile-photo {
+    width: 86px;
+    height: 86px;
+}
+
+.testimonials__article-name {
+    font-size: 20px;
+    font-weight: var(--title-weight);
+    line-height: 32px;
+}
+
+@media screen and (min-width: 1440px) {
+    .testimonials__container {
+        flex-direction: row;
+        gap: 24px;
+    }
+}
+
